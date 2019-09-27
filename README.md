@@ -1,3 +1,3 @@
 ## Event Sourcins
 
-[![CQS, CQRS, Event Sourcing - Разделение запросов и модификации данных](https://img.youtube.com/vi/kFNtKiK2SPs/0.jpg)](https://www.youtube.com/watch?v=kFNtKiK2SPs)
+[![Применение Event Sourcing (command, read, write, bus)](https://img.youtube.com/vi/kFNtKiK2SPs/0.jpg)](https://www.youtube.com/watch?v=kFNtKiK2SPs)
