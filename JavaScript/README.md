@@ -1,4 +1,4 @@
-## Use SQRS and Event Sourcing to Scale Read API
+## Use CQRS and Event Sourcing to Scale Read API
 
 ```
 +---------------------+    +-------------+    +------------+
