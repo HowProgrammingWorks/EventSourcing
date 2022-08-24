@@ -15,7 +15,7 @@ class BankRead {
     this.bank = new Bank();
     this.commands = [];
     this.queries = [];
-    eventBus.on('command', command => {
+    eventBus.on('command', (command) => {
       this.commands.push(command);
       this.bank.execute(command);
     });
