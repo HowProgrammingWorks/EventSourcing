@@ -7,16 +7,16 @@ class BankAccount {
   }
 }
 
-const operations = {
-  Create: (command, bank) => {
+const OPERATIONS = {
+  create: (command, bank) => {
     const account = bank.find(command.account);
     if (!account) bank.createAccount(command.account);
   },
-  Withdraw: (command, bank) => {
+  withdraw: (command, bank) => {
     const account = bank.find(command.account);
     account.balance -= command.amount;
   },
-  Income: (command, bank) => {
+  income: (command, bank) => {
     const account = bank.find(command.account);
     account.balance += command.amount;
   },
@@ -37,7 +37,7 @@ class Bank {
   }
 
   execute(command) {
-    const operation = operations[command.operation];
+    const operation = OPERATIONS[command.operation];
     operation(command, this);
     console.dir(command);
   }

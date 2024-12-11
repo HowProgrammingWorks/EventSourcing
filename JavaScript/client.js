@@ -27,8 +27,8 @@ console.table(res1);
 const marcusBalance1 = readApi1.getAccount(marcus);
 console.dir({ marcusBalance1 });
 
-const res2 = readApi2.select({ account: pius, operation: 'Income' });
+const res2 = readApi2.select({ account: pius, operation: 'income' });
 console.table(res2);
 
-const res3 = readApi3.select({ operation: 'Withdraw' });
+const res3 = readApi3.select({ operation: 'withdraw' });
 console.table(res3);

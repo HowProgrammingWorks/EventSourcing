@@ -18,16 +18,17 @@ class BankWrite {
   }
 
   createAccount(account) {
-    const operation = 'Create';
+    const operation = 'create';
     const command = new AccountCommand(account, operation);
     this.commands.push(command);
     this.eventBus.emit('command', command);
     this.bank.execute(command);
   }
 
-  operation(account, amount) {
-    const operation = amount < 0 ? 'Withdraw' : 'Income';
-    const command = new AccountCommand(account, operation, Math.abs(amount));
+  operation(account, value) {
+    const operation = value < 0 ? 'withdraw' : 'income';
+    const amount = Math.abs(value);
+    const command = new AccountCommand(account, operation, amount);
     this.commands.push(command);
     this.eventBus.emit('command', command);
     this.bank.execute(command);
